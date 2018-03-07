@@ -5,5 +5,21 @@
   "main": "index.js",
   "repository": "https://github.com/SagarNepali/react-hello-world.git",
   "author": "SagarNepali <nepalisagar23@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^3.0.6",
+    "path": "^0.12.7",
+    "webpack": "^4.1.0",
+    "webpack-dev-server": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack-cli": "^2.0.10"
+  }
 }
