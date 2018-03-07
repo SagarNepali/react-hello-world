@@ -1,0 +1,9 @@
+{
+  "name": "react-hello-world",
+  "version": "1.0.0",
+  "description": "Simple react app",
+  "main": "index.js",
+  "repository": "https://github.com/SagarNepali/react-hello-world.git",
+  "author": "SagarNepali <nepalisagar23@gmail.com>",
+  "license": "MIT"
+}
