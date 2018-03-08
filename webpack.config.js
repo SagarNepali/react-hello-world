@@ -2,8 +2,8 @@
     ./webpack.config.js
 */
 const path = require('path');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './public/index.html',
   filename: 'index.html',
@@ -18,7 +18,10 @@ module.exports = {
   },
   devServer: {
     inline:true,
-    port: 3030
+    port: 3030,
+	contentBase: "./public",
+	historyApiFallback: true,
+	hot: true
   },
   module: {
     rules: [
@@ -39,5 +42,6 @@ module.exports = {
       }
     ]
   },
-	plugins: [HtmlWebpackPluginConfig]
+	plugins: [HtmlWebpackPluginConfig,new webpack.BannerPlugin("Copyright Flying Unicorns inc."),new webpack.HotModuleReplacementPlugin()],
+	
 }
