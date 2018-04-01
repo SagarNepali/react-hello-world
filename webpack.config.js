@@ -42,6 +42,7 @@ module.exports = {
       }
     ]
   },
+  mode: "development",
 	plugins: [HtmlWebpackPluginConfig,new webpack.BannerPlugin("Copyright Flying Unicorns inc."),new webpack.HotModuleReplacementPlugin()],
 	
 }
